@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <script src="jquery.min.js"></script>
+    <link href="css/angular-material.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="128x128">
+    <script src="opensource.module.js"></script>
+    <script src="main.module.js"></script>
+    <title>Sample Application</title>
+</head>
+
+<body ng-app="mainApp" layout="column" ng-controller="MainController as mainCtrl">
+    <div>
+        <h2>Title : {{mainCtrl.title}}</h2>
+        <example-directive></example-directive>
+        <div layout="row" flex layout-align="none stretch">
+            <ui-view flex layout="column"></ui-view>
+        </div>
+    </div>
+</body>
+
+</html>
